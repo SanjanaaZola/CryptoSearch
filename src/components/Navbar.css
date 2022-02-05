@@ -2,11 +2,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 1140px;
+  margin: auto;
 }
 .icon {
   font-size: 2rem;
-  color: #ceacff;
+  padding-bottom: 0;
+  color: #e1ad01;
 }
 .purple {
-  color: #a160ff;
+  color: #bf9301;
+}
+
+.name-tag {
+  font-size: 2.6rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .icon .name-tag {
+    font-size: 1rem;
+    margin: auto;
+  }
 }

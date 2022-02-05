@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import Coins from './components/Coins'
 import Coin from './routes/Coin'
 import Navbar from './components/Navbar'
-import SearchBar from './components/SearchBar'
+
 function App() {
   const [coins, setCoins] = useState([])
   const url =
@@ -14,7 +14,7 @@ function App() {
       .get(url)
       .then((response) => {
         setCoins(response.data)
-        console.log(response.data[0])
+        console.log('data', response.data[0])
       })
       .catch((error) => {
         console.log(error)
@@ -23,7 +23,6 @@ function App() {
   return (
     <>
       <Navbar />
-      <SearchBar />
       <Routes>
         <Route path='/' element={<Coins coins={coins} />} />
         <Route path='/coin' element={<Coin />}>

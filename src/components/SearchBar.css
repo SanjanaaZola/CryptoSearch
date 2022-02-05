@@ -1,8 +1,7 @@
 .coin-search {
-  margin-bottom: 64px;
+  margin: auto 2rem;
   display: flex;
-  margin-top: 50px;
-  margin-left: 470px;
+  padding-top: 10px;
   width: 300px;
 }
 
@@ -13,7 +12,7 @@
 }
 
 .coin-input {
-  background: #232325;
+  background: rgba(24, 24, 24, 0.329);
   color: white;
   border: none;
   border-radius: 50px;

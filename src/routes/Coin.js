@@ -51,7 +51,6 @@ const Coin = () => {
                 <th>7d</th>
                 <th>14d</th>
                 <th>30d</th>
-                <th>1yr</th>
               </tr>
             </thead>
             <tbody>
@@ -100,16 +99,6 @@ const Coin = () => {
                   {coin.market_data?.price_change_percentage_30d_in_currency ? (
                     <p>
                       {coin.market_data.price_change_percentage_30d_in_currency.inr.toFixed(
-                        2
-                      )}
-                      %
-                    </p>
-                  ) : null}
-                </td>
-                <td>
-                  {coin.market_data?.price_change_percentage_1yr_in_currency ? (
-                    <p>
-                      {coin.market_data.price_change_percentage_1yr_in_currency.inr.toFixed(
                         2
                       )}
                       %
